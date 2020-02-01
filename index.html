@@ -1,64 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>小路的简历</title>
-  <link rel="stylesheet" type="text/css" href="">
-  <style>
-/* #head{height: 400px;}
+  <head>
+    <meta charset="UTF-8" />
+    <title>小路的博客</title>
+    <link rel="stylesheet" type="text/css" href="" />
+    <style>
+      /* #head{height: 400px;}
 #headcon{height: 300px;}
 #logo{height: 128px;width: 158px;top: 100px;left: 700px;}
 */
 
-*{margin:0;padding:0;list-style:none}
-body{height: 2000px;}
-/*#toup{width:200px;height:200px;position:fixed;left:20px;bottom:20px;background:url(img/eat.gif);display:none;z-index:10000}*/
-#headspace{width:100%;height:400px;position:relative;top:0;left:0}
-#head{width:100%;height:400px;background:black;position:fixed;top:0;left:0;box-shadow:0 1px 5px 1px black;z-index:10}
-#headcon{width:990px;height:400px;position:relative;overflow:hidden;margin:0 auto;}
-#face{float: left;margin: 30px 10px 0 0;}
-#logo{/*position:absolute;left:850px;top:160px;*/float: right;margin-top: 200px;}
-#path{font-size:80px;color:white;display:inline-block;/*position:absolute;top:130px;left:625px;*/font-family:"Microsoft YaHei",Verdana,Geneva,sans-serif;float: left;margin:147px 10px;}
-#title{font-size:80px;color:white;display:inline-block;/*position:absolute;top:130px;left:875px;*/font-family:"Microsoft YaHei",Verdana,Geneva,sans-serif;float: right;margin:147px 10px;}
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      body {
+        height: 2000px;
+      }
+      /*#toup{width:200px;height:200px;position:fixed;left:20px;bottom:20px;background:url(img/eat.gif);display:none;z-index:10000}*/
+      #headspace {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        top: 0;
+        left: 0;
+      }
+      #head {
+        width: 100%;
+        height: 400px;
+        background: black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        box-shadow: 0 1px 5px 1px black;
+        z-index: 10;
+      }
+      #headcon {
+        width: 990px;
+        height: 400px;
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto;
+      }
+      #face {
+        float: left;
+        margin: 30px 10px 0 0;
+      }
+      #logo {
+        /*position:absolute;left:850px;top:160px;*/
+        float: right;
+        margin-top: 200px;
+      }
+      #path {
+        font-size: 80px;
+        color: white;
+        display: inline-block; /*position:absolute;top:130px;left:625px;*/
+        font-family: 'Microsoft YaHei', Verdana, Geneva, sans-serif;
+        float: left;
+        margin: 147px 10px;
+      }
+      #title {
+        font-size: 80px;
+        color: white;
+        display: inline-block; /*position:absolute;top:130px;left:875px;*/
+        font-family: 'Microsoft YaHei', Verdana, Geneva, sans-serif;
+        float: right;
+        margin: 147px 10px;
+      }
 
-span.indexs{font-size:10px}
-#content{width:100%;height:2000px;position:relative;margin:10px auto;z-index:0;text-align: center;}
-#go_up{position:fixed;right:0;bottom:0;margin: 10px;}
-#ul1{ position:relative;width:808px; margin:500px auto;}
-#ul1 li{ position:relative; z-index:2;float:left;width:200px; height:50px; line-height:50px; text-align:center;}
-#ul1 li.box{ position:absolute;left:0;top:-40px; z-index:1;}
-/* li{width:100%;height:60px;margin-bottom:100px;background:#029df9;border:1px solid white;color:white;font-size:20px;line-height:60px;text-align:center}
+      span.indexs {
+        font-size: 10px;
+      }
+      #content {
+        width: 100%;
+        height: 2000px;
+        position: relative;
+        margin: 10px auto;
+        z-index: 0;
+        text-align: center;
+      }
+      #go_up {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        margin: 10px;
+      }
+      #ul1 {
+        position: relative;
+        width: 808px;
+        margin: 500px auto;
+      }
+      #ul1 li {
+        position: relative;
+        z-index: 2;
+        float: left;
+        width: 200px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+      }
+      #ul1 li.box {
+        position: absolute;
+        left: 0;
+        top: -40px;
+        z-index: 1;
+      }
+      /* li{width:100%;height:60px;margin-bottom:100px;background:#029df9;border:1px solid white;color:white;font-size:20px;line-height:60px;text-align:center}
 iframe{width:1230px;border:0;height:700px;z-index:100;overflow: hidden;}
 #fuck{width:1130px;height:700px}
 #aboutme{position:absolute;right:50px;top:30px;color:white;font-family:Î¢ÈíÑÅºÚ;transition:.5s;cursor:pointer}
 #aboutme:hover{color:#00b294}footer{width:100%;height:60px;background:#000;position:absolute;top:2805px;margin-bottom:-3px}
 #friends{position: absolute;left: 200px;top: 20px;color:white;z-index: 100;font-family: Î¢ÈíÑÅºÚ} */
-  </style>
-  <script src="javascripts/move.js"></script>
-  <script src="javascripts/index.js"></script>
-</head>
-<body>
-<div id="headspace"></div>
-  <div id="head">
-    <div id="headcon">
-      <img src="images/path.fw.png" id="face">
+    </style>
+    <script src="javascripts/move.js"></script>
+    <script src="javascripts/index.js"></script>
+  </head>
+  <body>
+    <div id="headspace"></div>
+    <div id="head">
+      <div id="headcon">
+        <img src="images/path.fw.png" id="face" />
         <p id="path">PATH</p>
-        <img src="images/logo.png" id="logo" alt="">
-        <p id="title"> on the way</p>
+        <img src="images/logo.png" id="logo" alt="" />
+        <p id="title">on the way</p>
+      </div>
+      <!--     ufo飞动效果 -->
+      <ul id="ul1">
+        <li>首页</li>
+        <li>经历</li>
+        <li>作品</li>
+        <li>关于我</li>
+        <li class="box"><img src="images/ufo.fw.png" alt="" /></li>
+      </ul>
     </div>
-<!--     ufo飞动效果 -->
-    <ul id="ul1">
-      <li>首页</li>
-      <li>经历</li>
-      <li>作品</li>
-      <li>关于我</li>
-      <li class="box"><img src="images/ufo.fw.png" alt=""></li>
-    </ul>
-  </div>
-  <div id="content">
-  <img src="images/goup.fw.png" id="go_up" alt="">
-
-
-  </div>
-</body>
+    <div id="content">
+      <img src="images/goup.fw.png" id="go_up" alt="" />
+    </div>
+  </body>
 </html>
